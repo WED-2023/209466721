@@ -1,7 +1,36 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
-}
+
+#menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0; 
+	background-color: #222; 
+	position: fixed; 
+	top: 0; 
+	width: 100%; 
+	z-index: 1000; 
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  /* Styling for each menu item */
+  #menu li {
+	display: inline-block; 
+  }
+  
+  
+  #menu a {
+	display: block; 
+	padding: 15px 25px; 
+	color: white; 
+	font-size: 16px; 
+	text-decoration: none; 
+	text-align: center; 
+	font-family: 'Arial', sans-serif; 
+	transition: background-color 0.3s ease, color 0.3s ease; 
+  }
+  
+  /* Hover effect for the links */
+  #menu a:hover {
+	background-color: #f39c12; /* Golden color for hover effect */
+	color: #222; /* Dark text color when hovered */
+	border-radius: 5px; /* Rounded corners for the hover effect */
+  }
