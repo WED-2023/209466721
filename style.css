@@ -28,9 +28,43 @@
 	transition: background-color 0.3s ease, color 0.3s ease; 
   }
   
-  /* Hover effect for the links */
+ 
   #menu a:hover {
-	background-color: #f39c12; /* Golden color for hover effect */
-	color: #222; /* Dark text color when hovered */
-	border-radius: 5px; /* Rounded corners for the hover effect */
+	background-color: #f39c12; 
+	color: #222; 
+	border-radius: 5px; 
   }
+
+  #photos {
+	margin: 20px;
+  }
+  
+  .photo-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+  }
+  
+  .photo-item-1, .photo-item-2, .photo-item-3, .photo-item-4, .photo-item-5 {
+	text-align: center;
+	margin: 15px;
+  }
+  
+  .photo-item-1 img, .photo-item-2 img, .photo-item-3 img, .photo-item-4 img, .photo-item-5 img {
+	width: 250px;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease;
+  }
+  
+  .photo-item-1 img:hover, .photo-item-2 img:hover, .photo-item-3 img:hover, .photo-item-4 img:hover, .photo-item-5 img:hover {
+	transform: scale(1.05);
+  }
+  
+  .photo-item-1 h3, .photo-item-2 h3, .photo-item-3 h3, .photo-item-4 h3, .photo-item-5 h3 {
+	margin-top: 10px;
+	font-size: 18px;
+	color: #333;
+  }
+  
